@@ -1,0 +1,91 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Netflux {{ country_name }} - Regardez des séries TV en ligne.{% endblock %}
+
+{% block body %}
+
+{% include "header.html.twig" %}
+
+
+<div class="section1">
+    <div class="background"></div>
+    <div class="gradient"></div>
+
+    <div class="block-card">
+        <div class="card">
+            <h1 class="card-title">Films, séries TV et bien plus en illimité.</h1>
+            <h2 class="card-sub-title">Où que vous soyez. Annulez à tout moment.</h2>
+
+            <form action="#">
+                <div class="col-12 input-group mb-3">
+                    <div class="text">
+                        <h3 class="card-email-title">Prêt à regarder Netflix ? Saisissez votre adresse e-mail pour vous abonner ou réactiver votre abonnement.</h3>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="block-input col-10">
+                            <input type="text" class="form-control">
+                            <p class="placeholder-email">Adresse e-mail</p>
+
+                            <button class="btn btn-secondary" type="button" id="button">Commencer <i class="bi bi-chevron-right"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="section2">
+    <div class="block-card-tv">
+        <div class="block-left">
+            <h1 class="card-title">Regardez Netflux sur votre TV.</h1>
+            <h2 class="card-sub-title">Regardez Netflux sur votre Smart TV, PlayStation, Xbox, Chromecast, Apple TV, lecteurs Blu-ray et bien plus.</h2>
+        </div> 
+        <div class="block-right">
+            <img class="img-fluid" src="{{ asset('build/images/netflux-tv.png') }}" alt="image tv">
+            {# <div class="block-video">
+                <video autoplay loop muted>
+                    <source src="{{ asset('build/images/video-tv-netflux.m4v') }}" type="video/mp4">
+                </video>
+            </div> #}
+        </div>
+    </div>
+</div>
+
+<div class="section3">
+    <div class="block-card-phone">
+        <div class="block-right">
+            <img class="img-fluid" src="{{ asset('build/images/mobile.jpg') }}" alt="image tv">
+
+            <div class="card-animation">
+                <div class="card-animation-image">
+                    <img alt="" src="{{ asset('build/images/boxshot.png') }}">
+                </div>
+                <div class="card-animation-text">
+                    <div>Stranger Things</div>
+                    <div>Téléchargement en cours...</div>
+                </div>
+            </div>
+        </div>
+        <div class="block-left">
+            <h1 class="card-title">Téléchargez vos séries préférées pour les regarder hors connexion.</h1>
+            <h2 class="card-sub-title">Enregistrez vos programmes préférés et ayez toujours quelque chose à regarder.</h2>
+        </div> 
+    </div>
+</div>
+   
+<div class="section2">
+    <div class="block-card-tv">
+        <div class="block-left">
+            <h1 class="card-title">Regardez Netflux sur votre TV.</h1>
+            <h2 class="card-sub-title">Regardez Netflux sur votre Smart TV, PlayStation, Xbox, Chromecast, Apple TV, lecteurs Blu-ray et bien plus.</h2>
+        </div> 
+        <div class="block-right">
+            <img class="img-fluid" src="{{ asset('build/images/netflux-tv.png') }}" alt="image tv">
+        </div>
+    </div>
+</div>
+
+{% endblock %}
