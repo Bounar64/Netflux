@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Netflux {% endblock %}
+
+{% block body %}
+
+{% include "header.html.twig" %}
+
+<div class="section-login">
+    <div class="background"></div>
+    <div class="gradient"></div>
+
+    <div class="block-card-login">
+        <div class="block-login">
+            <h1 class="title-card-login">S'identifier</h1>
+            
+            <form action="#">
+                <input type="text" class="form-control input-email">
+                <p class="placeholder-email">E-mail ou numéro de téléphone</p>
+                
+                <input type="text" class="form-control input-password">
+                <p class="placeholder-password">Mot de passe</p>
+                <button class="btn btn-secondary w-100" type="button" id="button">S'identifier</button>
+
+                <div class="form-end">
+                    <div class="remember">
+                        <input type="checkbox" checked>Se souvenir de moi
+                    </div>
+                    <div class="help">
+                        Besoin d'aide ?
+                    </div>
+                </div>
+            </form>
+
+            <div class="other">
+                <div class="facebook">
+                    <img src="{{ asset('build/images/logo-fb.png') }}" alt="logo facebook">
+                    S'identifier avec Facebook 
+                </div>
+                <div class="inscription">
+                    <p>Première visite sur Netflux ? <span>Inscrivez-vous</span>.</p>
+                </div>
+                <div class="captcha">
+                    <p>Cette page est protégée par Google reCAPTCHA pour nous assurer que vous n'êtes pas un robot.</p>
+                    <span><a href="#">En savoir plus.</a></span>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+
+{% include "footer.html.twig" %}
+
+{% endblock %}

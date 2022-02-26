@@ -6,7 +6,69 @@
  */
 
 // any CSS you import will output into a single css file (app.css in this case)
-import './styles/app.css';
+import './styles/app.scss';
 
 // start the Stimulus application
 import './bootstrap';
+
+
+/************* Création de l'accordéon du FAQ *************/
+const buttons = document.querySelectorAll('.button');
+const button_card = document.querySelectorAll('.button-card');
+const plus = document.querySelectorAll('.bi-plus-lg');
+
+buttons[0].onclick = function() {
+    button_card[0].classList.toggle('active');
+    plus[0].classList.toggle('cross');
+    button_card[1].classList.remove('active');  
+    button_card[2].classList.remove('active');  
+    button_card[3].classList.remove('active');  
+    button_card[4].classList.remove('active');  
+    button_card[5].classList.remove('active');  
+}
+buttons[1].onclick = function() {
+    button_card[1].classList.toggle('active');
+    plus[1].classList.toggle('cross');
+    button_card[0].classList.remove('active');  
+    button_card[2].classList.remove('active');  
+    button_card[3].classList.remove('active');  
+    button_card[4].classList.remove('active');  
+    button_card[5].classList.remove('active');  
+}
+buttons[2].onclick = function() {
+    button_card[2].classList.toggle('active');
+    plus[2].classList.toggle('cross');
+    button_card[0].classList.remove('active');  
+    button_card[1].classList.remove('active');  
+    button_card[3].classList.remove('active');  
+    button_card[4].classList.remove('active');  
+    button_card[5].classList.remove('active');  
+}
+buttons[3].onclick = function() {
+    button_card[3].classList.toggle('active');
+    plus[3].classList.toggle('cross');
+    button_card[0].classList.remove('active');  
+    button_card[1].classList.remove('active');  
+    button_card[2].classList.remove('active');  
+    button_card[4].classList.remove('active');  
+    button_card[5].classList.remove('active');  
+}
+buttons[4].onclick = function() {
+    button_card[4].classList.toggle('active');
+    plus[4].classList.toggle('cross');
+    button_card[0].classList.remove('active');  
+    button_card[1].classList.remove('active');  
+    button_card[2].classList.remove('active');  
+    button_card[3].classList.remove('active');  
+    button_card[5].classList.remove('active');  
+}
+buttons[5].onclick = function() {
+    button_card[5].classList.toggle('active');
+    plus[5].classList.toggle('cross');
+    button_card[0].classList.remove('active');  
+    button_card[1].classList.remove('active');  
+    button_card[2].classList.remove('active');  
+    button_card[3].classList.remove('active');  
+    button_card[4].classList.remove('active'); 
+}
+/************* Création de l'accordéon du FAQ *************/

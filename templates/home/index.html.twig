@@ -6,7 +6,6 @@
 
 {% include "header.html.twig" %}
 
-
 <div class="section1">
     <div class="background"></div>
     <div class="gradient"></div>
@@ -29,7 +28,6 @@
 
                             <button class="btn btn-secondary" type="button" id="button">Commencer <i class="bi bi-chevron-right"></i></button>
                         </div>
-
                     </div>
                 </div>
             </form>
@@ -57,15 +55,20 @@
 <div class="section3">
     <div class="block-card-phone">
         <div class="block-right">
-            <img class="img-fluid" src="{{ asset('build/images/mobile.jpg') }}" alt="image tv">
+            <img class="img-iphone" class="img-fluid" src="{{ asset('build/images/mobile.jpg') }}" alt="image tv">
 
             <div class="card-animation">
                 <div class="card-animation-image">
-                    <img alt="" src="{{ asset('build/images/boxshot.png') }}">
+                    <img class="img-boxshot" alt="image boxshot" src="{{ asset('build/images/boxshot.png') }}">
+
+                    <div class="card-animation-text">
+                        <div>Stranger Things</div>
+                        <div>Téléchargement en cours...</div>
+                    </div>
                 </div>
-                <div class="card-animation-text">
-                    <div>Stranger Things</div>
-                    <div>Téléchargement en cours...</div>
+                
+                <div class="card-animation-image">
+                    <img class="download-gif" src="{{ asset('build/images/download-icon.gif') }}" alt="download gif">
                 </div>
             </div>
         </div>
@@ -76,16 +79,97 @@
     </div>
 </div>
    
-<div class="section2">
-    <div class="block-card-tv">
+<div class="section4">
+    <div class="block-card-desktop">
         <div class="block-left">
-            <h1 class="card-title">Regardez Netflux sur votre TV.</h1>
-            <h2 class="card-sub-title">Regardez Netflux sur votre Smart TV, PlayStation, Xbox, Chromecast, Apple TV, lecteurs Blu-ray et bien plus.</h2>
+            <h1 class="card-title">Où que vous soyez.</h1>
+            <h2 class="card-sub-title">Regardez des films et séries TV en accès illimité sur votre TV, smartphone, tablette et ordinateur, tout compris.</h2>
         </div> 
         <div class="block-right">
-            <img class="img-fluid" src="{{ asset('build/images/netflux-tv.png') }}" alt="image tv">
+            <img class="img-fluid" src="{{ asset('build/images/device-pile.png') }}" alt="video desktop">
         </div>
     </div>
 </div>
+
+<div class="section5">
+    <div class="block-card-kids">
+        <div class="block-right">
+            <img class="img-kids" class="img-fluid" src="{{ asset('build/images/netflux-kids.png') }}" alt="image kids">
+        </div>
+
+        <div class="block-left">
+            <h1 class="card-title">Créez des profils pour les enfants.</h1>
+            <h2 class="card-sub-title">Les enfants découvrent de nouvelles aventures et retrouvent leurs personnages préférés dans un espace bien à eux, déjà inclus dans votre abonnement.</h2>
+        </div> 
+    </div>
+</div>
+
+<div class="section6">    
+    <div class="block-card-FAQ">
+        <h1 class="card-title">Foire aux questions</h1>
+
+        <div class="block-FAQ">
+            <button type="button" class="btn btn-secondary button">Netflux, qu'est-ce que c'est ?<i class="bi bi-plus-lg"></i></button>
+            <div class="button-card">
+                Netflux est un service de streaming qui propose une vaste sélection de séries TV, films, animes, 
+                documentaires et autres programmes primés sur des milliers d'appareils connectés à Internet.
+                <br>
+                <br>
+                Regardez tout ce que vous voulez, quand vous voulez, sans publicité et à un tarif mensuel très attractif. 
+                Découvrez de nouveaux films et séries TV chaque semaine, il y en a pour tous les goûts !
+            </div>
+            <button type="button" class="btn btn-secondary button">Combien coûte Netflux ?<i class="bi bi-plus-lg"></i></button>
+            <div class="button-card">
+               Regardez Netflix sur votre smartphone, tablette, Smart TV, ordinateur ou appareil de streaming, 
+               le tout pour un tarif mensuel fixe. Les forfaits vont de 8,99 € à 17,99 € par mois. Pas de contrat ni de frais supplémentaires.
+            </div>
+            <button type="button" class="btn btn-secondary button">Où puis-je regarder Netflux ?<i class="bi bi-plus-lg"></i></button>
+            <div class="button-card">
+                Netflux, c'est où vous voulez, quand vous voulez. Connectez-vous à votre compte pour regarder Netflux en ligne sur netflux.com
+                depuis votre ordinateur ou tout appareil connecté à Internet avec l'application Netflux, comme les Smart TV, smartphones, tablettes, 
+                lecteurs de streaming et consoles de jeu.
+                <br>
+                <br>
+                Vous pouvez aussi télécharger vos séries préférées avec l'application iOS, Android ou Windows 10. 
+                Téléchargez des titres pour les regarder sur votre appareil mobile, même sans connexion Internet. 
+                Emportez Netflux partout avec vous.
+            </div>
+            <button type="button" class="btn btn-secondary button">Comment puis-je annuler mon forfait ?<i class="bi bi-plus-lg"></i></button>
+            <div class="button-card">
+               Netflux offre une grande souplesse. Pas de contrat compliqué. Sans engagement. 
+               Deux clics suffisent pour annuler votre compte en ligne. Pas de frais d'annulation : ouvrez ou fermez votre compte à tout moment.
+            </div>
+            <button type="button" class="btn btn-secondary button">Que puis-je regarder sur Netflux ?<i class="bi bi-plus-lg"></i></button>
+            <div class="button-card">
+               Netflux propose un vaste catalogue comprenant notamment des longs métrages, des documentaires, des séries TV, 
+               des animes et des programmes originaux Netflux primés. Regardez Netflux à volonté, quand vous le voulez.
+            </div>
+            <button type="button" class="btn btn-secondary button">Est-ce que Netflux est adapté aux enfants ?<i class="bi bi-plus-lg"></i></button>
+            <div class="button-card">
+               Netflux Jeunesse est inclus dans votre abonnement et offre un meilleur contrôle aux parents, ainsi qu'un espace dédié aux enfants, 
+               avec des films et des séries destinés à toute la famille.
+               <br>
+               <br>
+               Les profils Enfants comportent des fonctionnalités de contrôle parental avec code PIN permettant de modifier la catégorie d'âge 
+               des contenus que vos enfants peuvent regarder et de bloquer des titres spécifiques.
+            </div>
+        
+            <div class="card">
+                <form action="#">
+                    <h3 class="card-email-title">Prêt à regarder Netflix ? Saisissez votre adresse e-mail pour vous abonner ou réactiver votre abonnement.</h3>
+
+                    <div class="block-form">
+                        <input type="text" class="form-control">
+                        <p class="placeholder-email">Adresse e-mail</p>
+
+                        <button class="btn btn-secondary" type="button" id="button">Commencer <i class="bi bi-chevron-right"></i></button>
+                    </div> 
+                </form>
+            </div>
+        </div>      
+    </div>
+</div> 
+
+{% include "footer.html.twig" %}
 
 {% endblock %}

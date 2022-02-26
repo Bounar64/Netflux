@@ -1,12 +1,18 @@
 <div class="container-fluid p-0">
    <header>
         <nav>
+        {% if app.request.attributes.get('_route') == "home" %}
             <div class="img"><img src="{{ asset('build/images/logo-netflux-full.png')}}" alt="logo netflux"></div>
+        {% else %}
+            <a href="{{ path('home')}}"><div class="img"><img src="{{ asset('build/images/logo-netflux-full.png')}}" alt="logo netflux"></div></a>
+        {% endif %}
 
+        {% if app.request.attributes.get('_route') == "home" %}
             <div class="group-btn">
                 <button class="btn btn-dark btn-lang"><i class="bi bi-globe"></i>Français<i class="bi bi-caret-down-fill"></i></button>
-                <button class="btn btn-danger btn-login">S'identifier</button>
+                <a href="{{ path('login') }}"><button class="btn btn-danger btn-login">S'identifier</button></a>
             </div>
+        {% endif %}
         </nav>
    </header>
 </div>

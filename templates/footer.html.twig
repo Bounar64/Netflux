@@ -1,0 +1,74 @@
+{% if app.request.attributes.get('_route') == "home" %}
+<footer class="footer">
+    <div class="block-card-footer">
+        <p class="footer-top">Des questions ? Appelez le (+33) 0000-000-000</p>
+
+        <div class="block-item-footer">
+            <div>
+               <p><a href="#">FAQ</a></p> 
+               <p><a href="#">Relations Investisseurs</a></p> 
+               <p><a href="#">Modes de lecture</a></p> 
+               <p><a href="#">Mentions légales</a></p> 
+               <p><a href="#">Seulement sur Netflix</a></p> 
+            </div>
+
+            <div>
+                <p><a href="#">Centre d'aide</a></p> 
+                <p><a href="#">Recrutement</a></p> 
+                <p><a href="#">Conditions d'utilisation</a></p> 
+                <p><a href="#">Nous contacter</a></p> 
+            </div>
+
+            <div>
+                <p><a href="#">Compte</a></p> 
+                <p><a href="#">Utiliser des cartes cadeaux</a></p> 
+                <p><a href="#">Confidentialité</a></p> 
+                <p><a href="#">Test de vitesse</a></p> 
+            </div>
+
+            <div>
+                <p><a href="#">Presse</a></p> 
+                <p><a href="#">Acheter des cartes cadeaux</a></p> 
+                <p><a href="#">Préférences de cookies</a></p> 
+                <p><a href="#">Informations légales</a></p> 
+            </div>
+        </div>
+
+        <button class="btn btn-dark btn-lang-footer"><i class="bi bi-globe"></i>Français<i class="bi bi-caret-down-fill"></i></button>
+     
+        <div class="contry-footer">Netflux {{ country_name }}</div>
+    </div>
+</footer>
+
+{% else %}
+
+<footer class="footer-login">
+<hr>
+    <div class="block-card-footer">
+        <p class="footer-top">Des questions ? Appelez le (+33) 0000-000-000</p>
+
+        <div class="block-item-footer">
+            <div>
+               <p><a href="#">FAQ</a></p> 
+               <p><a href="#">Préférences de cookies</a></p> 
+            </div>
+
+            <div>
+                <p><a href="#">Centre d'aide</a></p> 
+                <p><a href="#">Mention légales</a></p> 
+            </div>
+
+            <div>
+                <p><a href="#">Condition d'utilisation</a></p> 
+            </div>
+
+            <div>
+                <p><a href="#">Confidentialité</a></p> 
+            </div>
+        </div>
+
+        <button class="btn btn-dark btn-lang-footer"><i class="bi bi-globe"></i>Français<i class="bi bi-caret-down-fill"></i></button>  
+    </div>
+</footer>
+
+{% endif %}
