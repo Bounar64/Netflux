@@ -714,7 +714,6 @@ header {
             position: relative;
             top: 90px;
             margin: 0 auto;
-            min-height: 100vh;
             background-color: transparent;
             max-width: 450px;
             z-index: 15;
@@ -857,6 +856,15 @@ header {
                     height: 17px;
                     vertical-align:sub;
                 }
+
+                a {
+                    color: #B3B3B3;
+                    text-decoration: none;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
             }
 
             .other {
@@ -877,8 +885,13 @@ header {
                     font-size: 16px;
                     color: #737373;
 
-                    span {
+                    a {
                         color: #fff;
+                        text-decoration: none;
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
                     }
                 }
 
@@ -926,6 +939,15 @@ header {
 
         .footer-top {
             margin-bottom: 30px;
+
+            a {
+                color: #757575;
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
         }
 
         .block-item-footer {
