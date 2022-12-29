@@ -683,9 +683,9 @@ header {
 
 /** ******************************************************** LOGIN PAGE ******************************************************** **/
 .section-login {
-    position: relative;
+    position: absolute;
     width: 100%;
-    height: 1100px;
+    height: 1150px;
 
         .background {
             position: absolute;
@@ -704,7 +704,7 @@ header {
             height: 100%;
             top: 0;
             left: 0;
-            background-color: rgba(0, 0, 0, 0.4);
+            background-color: rgba(0, 0, 0, 0.35);
             background-image: linear-gradient(to top,rgba(0,0,0,.5) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.5) 100%);
             z-index: 10;
         }
@@ -948,7 +948,7 @@ header {
     position: absolute;
     width: 100%;
     height: 23%;
-    bottom: -30px;
+    bottom: 0px;
     left: 0;
     z-index: 30;
     background-color: rgba(0,0,0,.7);
@@ -1779,7 +1779,7 @@ header {
     .section-login {
         position: relative;
         width: 100%;
-        height: 860px;
+        height: 100vh;
         background-color: #000;
     
             .background {
@@ -1986,7 +1986,7 @@ header {
     .footer-login {
         position: absolute;
         width: 100%;
-        height: 23%;
+        height: 35%;
         bottom: 0;
         left: 0;
         z-index: 30;
@@ -2809,5 +2809,39 @@ header {
         height: 960px;
     }
 }  
+
+@media screen and (max-width: 1024px) and (height: 1366px) {
+    .section-login {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 414px) and (height: 736px) {
+    .footer-login {
+        position: absolute;
+        width: 100%;
+        height: 23%;
+        bottom: 0;
+        left: 0;
+        z-index: 30;
+        background-color: rgba(0,0,0,.7);
+        color: #757575;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 414px) and (height: 736px) {
+    .footer-login {
+        position: absolute;
+        width: 100%;
+        height: 23%;
+        bottom: 0;
+        left: 0;
+        z-index: 30;
+        background-color: rgba(0,0,0,.7);
+        color: #757575;
+        padding-top: 10px;
+    }
+}
 
 /** ******************************************************** RESPONSIVE ******************************************************** **/
